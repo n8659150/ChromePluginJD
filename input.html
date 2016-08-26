@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		width: 450px;
+		height: 40px;
+	}
+	input {
+		width: 330px;
+    	height: 20px;
+	    padding: 10px 5px;
+	    font:  15px '微软雅黑';
+	    float: left;
+	    border: 0;
+	    background: #eee;
+	    -webkit-border-radius: 3px 0 0 3px;
+	    border-radius: 3px 0 0 3px;
+	}
+
+	button {
+		overflow: visible;
+	    position: relative;
+	    float: right;
+	    border: 0;
+	    padding: 0;
+	    cursor: pointer;
+	    height: 40px;
+	    width: 110px;
+	    font: bold 15px/40px '微软雅黑';
+	    color: #fff;
+	    background: #d83c3c;
+	    -webkit-border-radius: 0 3px 3px 0;
+	    border-radius: 0 3px 3px 0;
+	    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+	}
+	button:before {
+		content: '';
+	    position: absolute;
+	    border-width: 8px 8px 8px 0;
+	    border-style: solid solid solid none;
+	    border-color: transparent #d83c3c transparent;
+	    top: 12px;
+	    left: -6px;
+	}
+	</style>
+</head>
+<body>
+	<input id="search_input" type="text" placeholder="输入关键字">
+	<button id="search_btn">搜索</button>
+</body>
+<script src="js/jd_search.js"></script>
+</html>
